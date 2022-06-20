@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.stillhet.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.stillhet.ui.music.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_nav_gallery_to_nav_album_music"
+            app:destination="@id/nav_album_music" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.stillhet.ui.discussion.MyDiscussionFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_my_discussion" >
+        <action
+            android:id="@+id/action_nav_slideshow_to_nav_find_discussion"
+            app:destination="@id/nav_find_discussion"
+            app:enterAnim="@android:anim/slide_out_right"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_nav_slideshow_to_nav_new_discussion"
+            app:destination="@id/nav_new_discussion" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.example.stillhet.ui.setting.SettingsFragment"
+        android:label="@string/action_settings"
+        tools:layout="@layout/fragment_setting" />
+
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.example.stillhet.ui.help.HelpFragment"
+        android:label="@string/menu_help"
+        tools:layout="@layout/fragment_help"/>
+
+    <fragment
+        android:id="@+id/nav_find_discussion"
+        android:name="com.example.stillhet.ui.discussion.FindDiscussionFragment"
+        tools:layout="@layout/find_discussion_fragment">
+        <action
+            android:id="@+id/action_nav_find_discussion_to_nav_new_discussion"
+            app:destination="@id/nav_new_discussion"
+            app:enterAnim="@android:anim/slide_out_right"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_nav_find_discussion_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+        <action
+            android:id="@+id/action_nav_find_discussion_to_nav_new_discussion2"
+            app:destination="@id/nav_new_discussion" />
+        <action
+            android:id="@+id/action_nav_find_discussion_to_nav_slideshow2"
+            app:destination="@id/nav_slideshow" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_new_discussion"
+        android:name="com.example.stillhet.ui.discussion.NewDiscussionFragment"
+        tools:layout="@layout/fragment_new_discussion">
+        <action
+            android:id="@+id/action_nav_new_discussion_to_nav_slideshow"
+            app:destination="@id/nav_slideshow"
+            app:enterAnim="@android:anim/slide_out_right"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_nav_new_discussion_to_nav_find_discussion"
+            app:destination="@id/nav_find_discussion" />
+        <action
+            android:id="@+id/action_nav_new_discussion_to_nav_find_discussion2"
+            app:destination="@id/nav_find_discussion" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_album_music"
+        android:name="com.example.stillhet.ui.music.AlbumFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_album">
+        <action
+            android:id="@+id/action_nav_album_music_to_nav_recommendation_music"
+            app:destination="@id/nav_recommendation_music" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_recommendation_music"
+        android:name="com.example.stillhet.ui.music.RecommendationsFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_recommendations">
+        <action
+            android:id="@+id/action_nav_recommendation_music_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+    </fragment>
+</navigation>

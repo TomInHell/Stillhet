@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "44441285067",
+    "firebase_url": "https://stillhet-a0d4f-default-rtdb.firebaseio.com",
+    "project_id": "stillhet-a0d4f",
+    "storage_bucket": "stillhet-a0d4f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44441285067:android:5c6ed2f6215679aa10064e",
+        "android_client_info": {
+          "package_name": "com.example.stillhet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "44441285067-5hq54kkv9chjbbjr62bc64nqkuocaitb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1savDvGkr1TNXKAe6pWgNlh28V9Cz9-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "44441285067-5hq54kkv9chjbbjr62bc64nqkuocaitb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

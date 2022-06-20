@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_authorization"
+        android:icon="@drawable/avtoreg"
+        android:title="@string/title_auto" />
+
+    <item
+        android:id="@+id/navigation_registration"
+        android:icon="@drawable/reg"
+        android:title="@string/title_reg" />
+
+</menu>

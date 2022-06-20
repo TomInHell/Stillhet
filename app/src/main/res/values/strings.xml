@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Stillhet</string>
+    <string name="title_auto">Авторизация</string>
+    <string name="title_reg">Регистрация</string>
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title" />
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Настройки</string>
+
+    <string name="title_playlist">Плейлист</string>
+    <string name="title_albums">Альбомы</string>
+    <string name="title_recommendations">Рекомендации</string>
+
+    <string name="title_my_discussions">Мои</string>
+    <string name="title_all_discussions">Все</string>
+    <string name="title_create">Создание</string>
+
+    <string name="menu_home">Личный кабинет</string>
+    <string name="menu_gallery">Музыка</string>
+    <string name="menu_help">Помощь</string>
+    <string name="menu_slideshow">Обсуждения</string>
+
+    <string name="AuthorizationButton">Войти</string>
+    <string name="RegistrationButton">Зарегистрироваться</string>
+    <string name="RegMail">Почта:</string>
+    <string name="RegName">Никнейм:</string>
+    <string name="RegPass">Пароль:</string>
+    <string name="RegRepeatPass">Повторите пароль:</string>
+    <string name="ExitAcc">Выйти</string>
+    <string name="ChangeDataAcc">Изменить данные</string>
+    <string name="Send">Отправить</string>
+    <string name="WriteQ">Введите ваш вопрос:</string>
+
+    <string name="Theme">Тема</string>
+    <string name="Sunrise">Рассвет</string>
+    <string name="Day">День</string>
+    <string name="Sunset">Закат</string>
+    <string name="Night">Ночь</string>
+    <string name="Original">Оригинальный</string>
+    <string name="Change">Изменить</string>
+    <string name="DeleteAcc">Удалить акаунт</string>
+
+    <string name="findDiscussion">Найти</string>
+    <string name="createDiscussion">Создать</string>
+    <string name="myDiscussion">Мои</string>
+
+    <string name="forgotPassword">Забыли пароль?</string>
+
+    <string-array name="MailsFor">
+        <item><string>@mail.ru</string></item>
+        <item><string>@gmail.com</string></item>
+        <item><string>@list.ru</string></item>
+        <item><string>@yandex.ru</string></item>
+    </string-array>
+
+    <string-array name="listOfTopics">
+        <item><string>Неопределенно</string></item>
+        <item><string>Музыканты</string></item>
+        <item><string>Группы</string></item>
+        <item><string>Альбомы</string></item>
+        <item><string>Синглы</string></item>
+        <item><string>Музыкальные инструменты</string></item>
+        <item><string>Направления</string></item>
+        <item><string>Жанры</string></item>
+        <item><string>Выступления</string></item>
+        <item><string>Концерты</string></item>
+    </string-array>
+
+    <string-array name="FindOfTopics">
+        <item><string>Поиск по теме</string></item>
+        <item><string>Неопределенно</string></item>
+        <item><string>Музыканты</string></item>
+        <item><string>Группы</string></item>
+        <item><string>Альбомы</string></item>
+        <item><string>Синглы</string></item>
+        <item><string>Музыкальные инструменты</string></item>
+        <item><string>Направления</string></item>
+        <item><string>Жанры</string></item>
+        <item><string>Выступления</string></item>
+        <item><string>Концерты</string></item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Head">Заголовок</string>
+    <string name="question">Ваш вопрос…</string>
+    <string name="chooseTopic">Выберите тему(Необязательное поле):</string>
+    <string name="todo">TODO</string>
+    <string name="FindWithHead">Поиск…</string>
+    <string name="MyMusic">Моя</string>
+    <string name="MusicAlbum">Альбомы</string>
+    <string name="RecommendedMusic">Рекомендации</string>
+    <string name="Question">Вопрос…</string>
+    <string name="xxxxxx">XXXXXX</string>
+    <string name="pen">✎</string>
+    <string name="addInPlaylist">Добавить</string>
+    <string name="deleteFromPlaylist">Удалить</string>
+    <string name="yourAlbum">Ваши альбомы</string>
+    <string name="otherAlbums">Альбомы, созданные другими пользователями</string>
+    <string name="changeAlbumPhoto">Изменить</string>
+</resources>

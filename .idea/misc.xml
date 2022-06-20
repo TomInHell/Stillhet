@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Stillhet/app/src/main/res/drawable-v21/ic_menu_gallery.xml" value="0.3828125" />
+        <entry key="..\:/Stillhet/app/src/main/res/drawable-v21/ic_menu_slideshow.xml" value="0.3828125" />
+        <entry key="..\:/Stillhet/app/src/main/res/drawable-v24/edittextstyle2.xml" value="0.3675" />
+        <entry key="..\:/Stillhet/app/src/main/res/drawable/day.xml" value="0.2388888888888889" />
+        <entry key="..\:/Stillhet/app/src/main/res/drawable/edittextstyle.xml" value="0.3074074074074074" />
+        <entry key="..\:/Stillhet/app/src/main/res/drawable/findline.xml" value="0.311" />
+        <entry key="..\:/Stillhet/app/src/main/res/drawable/gradient.xml" value="0.3769230769230769" />
+        <entry key="..\:/Stillhet/app/src/main/res/drawable/gradient2.xml" value="0.3769230769230769" />
+        <entry key="..\:/Stillhet/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.3769230769230769" />
+        <entry key="..\:/Stillhet/app/src/main/res/drawable/loading_screen.xml" value="0.3595" />
+        <entry key="..\:/Stillhet/app/src/main/res/drawable/night.xml" value="0.2388888888888889" />
+        <entry key="..\:/Stillhet/app/src/main/res/drawable/side_nav_bar.xml" value="0.3769230769230769" />
+        <entry key="..\:/Stillhet/app/src/main/res/drawable/sunrise.xml" value="0.2388888888888889" />
+        <entry key="..\:/Stillhet/app/src/main/res/drawable/sunset.xml" value="0.38229166666666664" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/activity_navigation.xml" value="0.34595959595959597" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/album_row.xml" value="0.36666666666666664" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/album_songs_row.xml" value="0.36666666666666664" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/app_bar_navigation.xml" value="0.25" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/content_navigation.xml" value="0.36666666666666664" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/delete_dialog.xml" value="0.36614583333333334" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/discussion_row.xml" value="0.36666666666666664" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/discussion_row_2.xml" value="0.36666666666666664" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/find_discussion_fragment.xml" value="0.33" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/frafment_exit.xml" value="0.36666666666666664" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/fragment_album.xml" value="0.33" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/fragment_all.xml" value="0.36614583333333334" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/fragment_authorization.xml" value="0.33" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/fragment_auto.xml" value="0.36666666666666664" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/fragment_create.xml" value="0.36614583333333334" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/fragment_create_album.xml" value="0.25" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/fragment_dashboard.xml" value="0.36666666666666664" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/fragment_exit.xml" value="0.33" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/fragment_gallery.xml" value="0.33" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/fragment_help.xml" value="0.36614583333333334" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/fragment_listen_album.xml" value="0.36666666666666664" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/fragment_my.xml" value="0.36614583333333334" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/fragment_my_discussion.xml" value="0.36666666666666664" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/fragment_new_discussion.xml" value="0.33" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/fragment_notifications.xml" value="0.36666666666666664" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/fragment_playlist.xml" value="0.36614583333333334" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/fragment_recommendations.xml" value="0.36614583333333334" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/fragment_registration.xml" value="0.36666666666666664" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/fragment_setting.xml" value="0.36666666666666664" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/fragment_slideshow.xml" value="0.25" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/nav_header_navigation.xml" value="0.33" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/player_layout.xml" value="0.365625" />
+        <entry key="..\:/Stillhet/app/src/main/res/layout/songs_row.xml" value="0.33" />
+        <entry key="..\:/Stillhet/app/src/main/res/menu/activity_main_drawer.xml" value="0.5" />
+        <entry key="..\:/Stillhet/app/src/main/res/menu/add_or_delete.xml" value="0.36666666666666664" />
+        <entry key="..\:/Stillhet/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Stillhet/app/src/main/res/menu/navigation.xml" value="0.36666666666666664" />
+        <entry key="..\:/Stillhet/app/src/main/res/menu/search_line.xml" value="0.36666666666666664" />
+        <entry key="..\:/Stillhet/app/src/main/res/menu/top_discussions_menu.xml" value="0.25" />
+        <entry key="..\:/Stillhet/app/src/main/res/menu/top_music_menu.xml" value="0.33" />
+        <entry key="..\:/Stillhet/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3769230769230769" />
+        <entry key="..\:/Stillhet/app/src/main/res/xml/root_preferences.xml" value="0.36614583333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

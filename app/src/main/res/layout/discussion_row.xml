@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/song_row"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="5dp"
+    tools:targetApi="honeycomb">
+
+    <ImageView
+        android:id="@+id/ikon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/disk"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/discussion_title"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/ikon"
+        android:layout_toRightOf="@+id/ikon"
+        android:paddingEnd="50dp"
+        android:paddingRight="50dp"
+        android:text="Head"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/disc_body"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Discuss_Creator"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/ikon"
+        android:layout_toRightOf="@+id/ikon"
+        android:text="body"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/disc_body"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="0dp"
+        android:background="#DCDBDB" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView13"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/ikon"
+        android:text="Создатель:" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/discussion_title"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/ikon"
+        android:text="Тема:" />
+
+    <TextView
+        android:id="@+id/Discuss_Theme"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/discussion_title"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/textView13"
+        android:text="Theme"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/Discuss_Creator"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Discuss_Theme"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="51dp"
+        android:layout_toEndOf="@+id/textView7"
+        android:text="Creator"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/discussion_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ikon"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="1dp"
+        android:text="0" />
+
+</RelativeLayout>

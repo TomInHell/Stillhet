@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.discussion.NewDiscussionFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0">
+
+        <TextView
+            android:id="@+id/MyDiscussion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="MyDiscussionClick"
+            android:text="@string/myDiscussion"
+            android:textColor="#777676"
+            tools:ignore="TouchTargetSizeCheck,UsingOnClickInXml" />
+
+        <TextView
+            android:id="@+id/CreateDiscussion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="MyDiscussionClick"
+            android:text="@string/createDiscussion"
+            android:textColor="#C33D13"
+            tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck,UsingOnClickInXml" />
+
+        <TextView
+            android:id="@+id/FindDiscussion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="MyDiscussionClick"
+            android:text="@string/findDiscussion"
+            android:textColor="#777676"
+            tools:ignore="TouchTargetSizeCheck,UsingOnClickInXml" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/HeadDiscussion"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/Head"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.06"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/BodyDiscussion"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/edittextstyle2"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/question"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:maxLength="380"
+        android:maxLines="10"
+        android:padding="5dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HeadDiscussion"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <Button
+        android:id="@+id/buttonNewDiscussion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/createDiscussion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ThemeDiscussion"
+        app:layout_constraintVertical_bias="0.297" />
+
+    <Spinner
+        android:id="@+id/ThemeDiscussion"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:entries="@array/listOfTopics"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/chooseTopic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BodyDiscussion"
+        app:layout_constraintVertical_bias="0.08" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
