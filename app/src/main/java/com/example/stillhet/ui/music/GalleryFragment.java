@@ -201,11 +201,18 @@ public class GalleryFragment extends Fragment {
     };
 
     MusicAdapter.OnStateClickListener stateClickListener = (state, position) -> {
-        changeSelectedSong(position);
-        jcPlayerView.playAudio(jcAudios.get(position));
-        jcPlayerView.setVisibility(View.VISIBLE);
-        playerButton.setVisibility(View.VISIBLE);
-        jcPlayerView.createNotification(R.drawable.okno);
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                changeSelectedSong(position);
+                jcPlayerView.playAudio(jcAudios.get(position));
+                jcPlayerView.setVisibility(View.VISIBLE);
+                playerButton.setVisibility(View.VISIBLE);
+                jcPlayerView.createNotification(R.drawable.okno);
+            }
+        };
+        Thread thread = new Thread(runnable);
+        thread.start();
     };
 
     public void changeSelectedSong(int index) {
