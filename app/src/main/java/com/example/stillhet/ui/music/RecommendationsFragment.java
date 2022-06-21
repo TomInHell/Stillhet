@@ -132,7 +132,6 @@ public class RecommendationsFragment extends Fragment {
         jcPlayerView.playAudio(jcAudios.get(position));
         jcPlayerView.setVisibility(View.VISIBLE);
         playerButton.setVisibility(View.VISIBLE);
-        jcPlayerView.createNotification(R.drawable.okno);
     };
 
     public static int random(int min, int max)

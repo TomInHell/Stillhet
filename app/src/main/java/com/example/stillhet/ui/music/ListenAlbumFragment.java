@@ -154,7 +154,6 @@ public class ListenAlbumFragment extends Fragment {
         jcPlayerView.playAudio(jcAudios.get(position));
         jcPlayerView.setVisibility(View.VISIBLE);
         playerButton.setVisibility(View.VISIBLE);
-        jcPlayerView.createNotification(R.drawable.okno);
     };
 
     public void changeSelectedSong(int index) {
