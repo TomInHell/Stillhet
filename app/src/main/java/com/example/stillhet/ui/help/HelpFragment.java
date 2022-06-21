@@ -33,7 +33,7 @@ public class HelpFragment extends Fragment {
             EditText question = root.findViewById(R.id.questionText);
             String Otv1 = question.getText().toString();
             if(!TextUtils.isEmpty(Otv1)) {
-                Intent intent = new Intent(Intent.ACTION_SEND, Uri.fromParts( "mailto","stillhet2022@mail.ru", null));
+                Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts( "mailto","stillhet2022@mail.ru", null));
                 intent.putExtra(Intent.EXTRA_SUBJECT, "Вопрос от пользователя");
                 intent.putExtra(Intent.EXTRA_TEXT, Otv1);
                 startActivity(Intent.createChooser(intent, "stillhet2022@mail.ru"));

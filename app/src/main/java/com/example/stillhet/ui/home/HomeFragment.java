@@ -35,13 +35,14 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
+        Bundle bundle = requireActivity().getIntent().getExtras();
         FirebaseUser user = musicAuth.getCurrentUser();
 
         EditText mail = binding.AccountMail;
         EditText name = binding.AccountName;
         if (user != null) {
             mail.setText(user.getEmail());
-            name.setText(user.getDisplayName());
+            name.setText(bundle.get("UserName").toString());
         }
 
         buttonExit = root.findViewById(R.id.buttonExit);

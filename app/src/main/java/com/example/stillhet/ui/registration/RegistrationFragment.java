@@ -88,7 +88,6 @@ public class RegistrationFragment extends Fragment {
                                                 data.put("userNames", newName);
                                                 reference.updateChildren(data);
 
-                                                user.sendEmailVerification();
                                                 requireActivity().finish();
                                                 Intent intent = new Intent(getActivity(), NavigationActivity.class);
                                                 intent.putExtra("UserName", name);
