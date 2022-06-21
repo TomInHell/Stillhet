@@ -132,7 +132,7 @@ public class GalleryFragment extends Fragment {
             }
             for (int i = 0; i < songName.size(); i ++)
                 states.add(new MusicState(songName.get(i), artist.get(i), time.get(i), link.get(i)));
-
+            
             if (getActivity() != null) {
                 musicAdapter = new MusicAdapter(GalleryFragment.this.getContext(), states, stateClickListener);
                 musicAdapter.setSelectedPosition(0);
@@ -189,7 +189,6 @@ public class GalleryFragment extends Fragment {
                 musicAdapter.setSelectedPosition(-1);
                 recyclerView.setAdapter(musicAdapter);
             }
-
             if(checkIn) {
                 jcPlayerView.initPlaylist(jcAudios, null);
             }
