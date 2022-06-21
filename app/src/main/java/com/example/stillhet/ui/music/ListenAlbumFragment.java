@@ -130,9 +130,11 @@ public class ListenAlbumFragment extends Fragment {
             for (int i = 0; i < SongName.size(); i ++)
                 states.add(new MusicState(SongName.get(i), Artist.get(i), Time.get(i), Link.get(i)));
 
-            musicAdapter = new MusicAdapter(ListenAlbumFragment.this.getContext(), states, stateClickListener);
-            musicAdapter.setSelectedPosition(0);
-            recyclerView.setAdapter(musicAdapter);
+            if(getActivity() != null) {
+                musicAdapter = new MusicAdapter(ListenAlbumFragment.this.getContext(), states, stateClickListener);
+                musicAdapter.setSelectedPosition(0);
+                recyclerView.setAdapter(musicAdapter);
+            }
 
             if(checkIn) {
                 jcPlayerView.initPlaylist(jcAudios, null);

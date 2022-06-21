@@ -106,10 +106,13 @@ public class RecommendationsFragment extends Fragment {
                         states.add(new MusicState(songName.get(i), artist.get(i), time.get(i), link.get(i)));
                         jcAudios.add(JcAudio.createFromURL(songName.get(i), link.get(i)));
                     }
-            musicAdapter = new MusicAdapter(RecommendationsFragment.this.getContext(), states, stateClickListener);
-            progressBar.setVisibility(View.GONE);
-            musicAdapter.setSelectedPosition(0);
-            recyclerView.setAdapter(musicAdapter);
+
+            if(getActivity() != null) {
+                musicAdapter = new MusicAdapter(RecommendationsFragment.this.getContext(), states, stateClickListener);
+                progressBar.setVisibility(View.GONE);
+                musicAdapter.setSelectedPosition(0);
+                recyclerView.setAdapter(musicAdapter);
+            }
 
             if(checkIn) {
                 jcPlayerView.initPlaylist(jcAudios, null);

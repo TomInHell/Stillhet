@@ -1,6 +1,5 @@
 package com.example.stillhet;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -113,7 +112,6 @@ public class NavigationActivity extends AppCompatActivity {
         }
     }
 
-    @SuppressLint("ResourceAsColor")
     public void MyMusicClick(View view) {
         fragmentContainerView2 = findViewById(R.id.fragmentContainerMusic);
         linearLayout2 = findViewById(R.id.linearLayout4);

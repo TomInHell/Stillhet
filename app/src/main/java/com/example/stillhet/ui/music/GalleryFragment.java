@@ -133,11 +133,12 @@ public class GalleryFragment extends Fragment {
             for (int i = 0; i < songName.size(); i ++)
                 states.add(new MusicState(songName.get(i), artist.get(i), time.get(i), link.get(i)));
 
-
-            musicAdapter = new MusicAdapter(GalleryFragment.this.getContext(), states, stateClickListener);
-            musicAdapter.setSelectedPosition(0);
-            progressBar.setVisibility(View.GONE);
-            recyclerView.setAdapter(musicAdapter);
+            if (getActivity() != null) {
+                musicAdapter = new MusicAdapter(GalleryFragment.this.getContext(), states, stateClickListener);
+                musicAdapter.setSelectedPosition(0);
+                progressBar.setVisibility(View.GONE);
+                recyclerView.setAdapter(musicAdapter);
+            }
 
             if(checkIn) {
                 jcPlayerView.initPlaylist(jcAudios, null);
@@ -183,9 +184,11 @@ public class GalleryFragment extends Fragment {
                     jcAudios.add(JcAudio.createFromURL(songName.get(i), link.get(i)));
                 }
 
+            if (getActivity() != null) {
                 musicAdapter = new MusicAdapter(GalleryFragment.this.getContext(), states, stateClickListener);
                 musicAdapter.setSelectedPosition(-1);
                 recyclerView.setAdapter(musicAdapter);
+            }
 
             if(checkIn) {
                 jcPlayerView.initPlaylist(jcAudios, null);
@@ -201,18 +204,11 @@ public class GalleryFragment extends Fragment {
     };
 
     MusicAdapter.OnStateClickListener stateClickListener = (state, position) -> {
-        Runnable runnable = new Runnable() {
-            @Override
-            public void run() {
-                changeSelectedSong(position);
-                jcPlayerView.playAudio(jcAudios.get(position));
-                jcPlayerView.setVisibility(View.VISIBLE);
-                playerButton.setVisibility(View.VISIBLE);
-                jcPlayerView.createNotification(R.drawable.okno);
-            }
-        };
-        Thread thread = new Thread(runnable);
-        thread.start();
+        changeSelectedSong(position);
+        jcPlayerView.playAudio(jcAudios.get(position));
+        jcPlayerView.setVisibility(View.VISIBLE);
+        playerButton.setVisibility(View.VISIBLE);
+        jcPlayerView.createNotification(R.drawable.okno);
     };
 
     public void changeSelectedSong(int index) {

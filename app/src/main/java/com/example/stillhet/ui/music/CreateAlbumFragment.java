@@ -148,8 +148,10 @@
              for (int i = 0; i < SongName.size(); i ++)
                  states.add(new MusicState(SongName.get(i), Artist.get(i), Time.get(i), Link.get(i)));
 
-             musicAdapter = new CreateAlbumAdapter(CreateAlbumFragment.this.getContext(), states);
-             recyclerView.setAdapter(musicAdapter);
+             if (getActivity() != null) {
+                 musicAdapter = new CreateAlbumAdapter(CreateAlbumFragment.this.getContext(), states);
+                 recyclerView.setAdapter(musicAdapter);
+             }
          }
          @Override
          public void onCancelled(@NonNull DatabaseError error) {

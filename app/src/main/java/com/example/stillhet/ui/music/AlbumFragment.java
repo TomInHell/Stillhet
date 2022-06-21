@@ -136,11 +136,13 @@ public class AlbumFragment extends Fragment {
                 else otherStates.add(new AlbumState(albumName.get(i), creator.get(i), description.get(i), image.get(i)));
             }
 
-            adapter = new AlbumAdapter(AlbumFragment.this.getContext(), states, stateClickListener);
-            otherAdapter = new AlbumAdapter(AlbumFragment.this.getContext(), otherStates, stateClickListener);
-            progressBar.setVisibility(View.GONE);
-            recyclerMyView.setAdapter(adapter);
-            recyclerAllView.setAdapter(otherAdapter);
+            if (getActivity() != null) {
+                adapter = new AlbumAdapter(AlbumFragment.this.getContext(), states, stateClickListener);
+                otherAdapter = new AlbumAdapter(AlbumFragment.this.getContext(), otherStates, stateClickListener);
+                progressBar.setVisibility(View.GONE);
+                recyclerMyView.setAdapter(adapter);
+                recyclerAllView.setAdapter(otherAdapter);
+            }
         }
         @Override
         public void onCancelled(@NonNull DatabaseError error) {
